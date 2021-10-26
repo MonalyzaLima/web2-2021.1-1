@@ -9,14 +9,13 @@ criada uma branch com o nome da atividade e dentro dela deverá conter criar uma
 
 ###___Exemplo
 
-    1 - Instalar o docker:
-    https://www.docker.com/get-started
+    Analise a aula gravada  e replique as funcionalidades para Vendas, itensvenda, entrada, produto, itensentrada:
 
-    2 - instalar o laradock:
-    https://laradock.io/
+    1 - Criar Rotas (create e store) 
 
-    3 - criar um projeto laravel conforme instruções abaixo
-    https://alissonfreire.github.io/manual-ambiente-web/#instalar-o-docker-e-o-docker-compose
+    2 - Criar Views, models e migrations e fazer relacionamento entre as tabelas
+
+    Entrega: dia 26-10-21 as 14:00
 
 ###___Exemplo
 
