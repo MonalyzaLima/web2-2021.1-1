@@ -1,0 +1,53 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+  
+header {
+    background: rgb(175, 175, 175);
+    height: 100px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+}
+
+article {
+    padding: 20px;
+    margin: 20px;
+    background: rgb(188, 198, 240);
+    text-align: center;
+}
+
+#conteudo {
+    padding: 20px;
+    margin: 20px;
+    background: rgb(175, 175, 175);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+button {
+    font-size: 18px;
+    line-height: 1.5;
+    width: 10%;
+    float: center;
+    background: rgb(150, 175, 175);
+}
+
+#footer{
+    background: rgb(188, 198, 240);
+    padding: 5px;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}   
