@@ -36,25 +36,25 @@ As tecnologias abaixo foram utilizadas para o desenvolvimento do projeto:
 https://github.com/MonalyzaLima/web2-2021.1-1
 ```
 
-- Abra o diretório do projeto
+- Abrir o diretório do projeto
 
 ```
   cd web2-2021.1
 ```
 
-- Selecione a branch Projeto1-1Unidade
+- Selecionar a branch Projeto1-1Unidade
 
 ```
   git checkout Projeto1-1Unidade 
 ```
 
-- Instale as dependencias
+- Instalar as dependencias
 
 ```
    composer install
 ```
 
-- Por fim, execute os seguintes comandos no terminal:
+- Por fim, executar os seguintes comandos no terminal:
 
 ```
   # Adiciona todas as permissões na pasta storage
