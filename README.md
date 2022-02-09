@@ -1,6 +1,4 @@
 
-
-
 <div align="center">
   
   ## Disciplina WEB II - 2021.1
