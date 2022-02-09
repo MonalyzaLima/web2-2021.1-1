@@ -29,7 +29,7 @@ Atividade VI
 :heavy_check_mark: <a href="https://github.com/MonalyzaLima/web2-2021.1-1/tree/AtividadeVII">
 Atividade VII 
   
-> ##  Branches das projetos:
+> ##  Branches dos projetos:
 :heavy_check_mark:<a href="https://github.com/MonalyzaLima/web2-2021.1-1/tree/Projeto1-1Unidade">
 Projeto I
   
