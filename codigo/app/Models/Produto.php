@@ -9,11 +9,9 @@ class Produto extends Model
 {
     use HasFactory;
 
-    //nome da tabela
     protected $table = "produtos" ;
 
-    //Campos setados no banco
-    protected $fillable = ['nomeProduto', 'valorCompra', 'valorVenda', 'quantidade'];
+    protected $fillable = ['nomeProduto', 'ano', 'cor', 'marca', 'quantidade', 'valorCompra', 'valorVenda'];
 
     function itensVenda(){
         return $this->hasMany(ItensVenda::class, 'produto_id', 'id');
@@ -22,5 +20,6 @@ class Produto extends Model
     function itensEntrada(){
         return $this->hasMany(ItensEntrada::class, 'produto_id', 'id');
     }
+    
+    
 }
-

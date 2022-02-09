@@ -13,7 +13,7 @@ class StoreVendaRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,17 +24,24 @@ class StoreVendaRequest extends FormRequest
     public function rules()
     {
         return [
-            'notaFiscal' => 'required|min:10',
-            'valorTotal' => 'required',
-        ];
-    }
-
-    public function messages(){
-        return [
-            'notaFiscal.required' => "Campo nota fiscal obrigatório",
-            'notaFiscal.min' => "Campo nome deve ter no mínimo :min",
-            'valorTotal.requered' => "Campo valor total obrigatório"
-        ];
-    }
+            'nome' => 'required',
+            'cpf' => 'required',
+            'endereco' => 'required',
+            'telefone' => 'required',
+            'dataNascimento' => 'required',
+    ];
 }
+
+public function messages(){
+    return[
+        'nome.required' => 'Campo Nome obrigatório',
+        'cpf.required' => 'Campo CPF obrigatório',
+        'endereco.required' => 'Campo Endereço obrigatório',
+        'telefone.required' => 'Campo Telefone obrigatório',
+        'dataNascimento.required' => 'Campo Data de nascimento obrigatório',
+    ];
+
+}
+        ];
+    }
 }

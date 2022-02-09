@@ -1,45 +1,59 @@
-@extends('layouts.main')
+@extends('layouts.sidebar')
 
-@section('titulo','Lista de fornecedores')
+@section('titulo','Fornecedores')
 
-@section('conteudo')
+@section('conteudo')  
+<link rel="stylesheet" href="{{ URL::asset('css/fornecedor.css'); }}">   
+<body>
+    <main class="main">
+        <header>
+            <i class="menu-toggle disabled" data-feather="menu"></i>
+            <div class="header-conteudo">
+                <h1>FORNECEDORES</h1>
+            </div>
+        </header>
+        <div class="col-lg-12 text-right pr-5">
+            <a class="btn btn-dark mr-3" href="{{route('fornecedor.create')}}" role="button">Adicionar Fornecedor</a>
+        </div>  
+        <div class="content">
+            <table class="tabela-consulta">
+                <thead>
+                    <tr>
+                        <td>Nome</td>
+                        <td>CNPJ</td>
+                        <td>Email</td>
+                        <td>Endereço</td>
+                        <td>Telefone</td>
+                        <td>Alterar</td>
+                        <td>Excluir</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($fornecedores as $fornecedor)
+                    <tr>
+                        <td>{{$fornecedor->nome}}</td>
+                        <td>{{$fornecedor->cnpj}}</td>
+                        <td>{{$fornecedor->email}}</td>
+                        <td>{{$fornecedor->endereco}}</td>
+                        <td>{{$fornecedor->telefone}}</td>
 
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Nome</th>
-      <th scope="col">CNPJ</th>
-      <th scope="col">E-mail</th>
-      <th scope="col">Alterar</th>
-      <th scope="col">Deletar</th>
-    </tr>
-  </thead>
-  <tbody>
-    @foreach ($fornecedores as $fornecedor)
-        <tr>
-        <td>{{$fornecedor->nome}}</td>
-        <td>{{$fornecedor->cnpj}}</td>
-        <td>{{$fornecedor->email}}</td>
-        <td> 
-            <form action="{{route('fornecedor.edit', ['id' => $fornecedor->id])}}" method="GET">
-                <button type="submit" class="btn btn-primary">Alterar</button>
-            </form>
-           
-        
-        <td>         
-            <form action="{{route('fornecedor.delete', ['id' => $fornecedor->id])}}" method="POST">
-                @csrf
-                @method('DELETE')
-                <button type="submit" class="btn btn-primary">Deletar</button>
-            </form>
-        </td>
-        </tr>
-    @endforeach
-  </tbody>
-</table>
-
-<form action="{{route('fornecedor.create')}}" method="GET">
-  <button type="submit" class="btn btn-primary">Cadastrar novo fornecedor</button>
-</form>
-
+                        <td> 
+                            <form action="{{route('fornecedor.edit', ['id' => $fornecedor->id])}}" method="GET">
+                                <button type="submit" class="btn btn-dark">Alterar</button>
+                            </form>
+                        </td>
+                        <td>         
+                            <form action="{{route('fornecedor.delete', ['id' => $fornecedor->id])}}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-dark">Deletar</button>
+                            </form>
+                        </td>
+                    </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
 @endsection('conteudo')

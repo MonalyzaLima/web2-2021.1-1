@@ -25,8 +25,7 @@ class UpperCase implements Rule
      */
     public function passes($attribute, $value)
     {
-        return strtoupper($value) == $value;
-        
+        return strtoupper(($value) == $value);
     }
 
     /**
@@ -36,6 +35,6 @@ class UpperCase implements Rule
      */
     public function message()
     {
-        return 'O valor deve ser maiúsculo';
+        return 'The validation error message.';
     }
 }

@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreProdutoRequest;
 use Illuminate\Http\Request;
+use App\Http\Requests\StoreProdutoRequest;
 use App\Models\Produto;
 
 
@@ -25,7 +25,7 @@ class ProdutoController extends Controller
         $produto->valorVenda = $request->valorVenda;
         $produto->quantidade = $request->quantidade;
         $produto->save();
-        return redirect('/produtos/index');
+        return redirect()->route('produto.index');
     }
 
     public function edit($id){
@@ -35,11 +35,11 @@ class ProdutoController extends Controller
 
     public function update(StoreProdutoRequest $request){
         Produto::find($request->id)->update($request->except('_method'));
-        return redirect('/produtos/index')->with('msg', 'Cadastro realizado com sucesso');
+        return redirect()->route('produto.index')->with('msg', 'Cadastro realizado com sucesso');
     }
 
     public function destroy($id){
         Produto::findorFail($id)->delete();
-        return redirect('/produtos/index')->with('msg', 'Produto apagado');
+        return redirect()->route('produto.index')->with('msg', 'Produto apagado');
     }
 }

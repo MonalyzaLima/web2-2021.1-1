@@ -24,18 +24,23 @@ class StoreFornecedorRequest extends FormRequest
     public function rules()
     {
         return [
-            'nome' => 'required|min:10',
+            'nome' => 'required',
             'cnpj' => 'required',
-            'email ' => 'required|email:rfc,dns',
+            'endereco' => 'required',
+            'telefone' => 'required',
+            'email' => 'required',
         ];
     }
 
     public function messages(){
-        return [
-            'nome.required' => "Campo nome obrigatório",
-            'nome.min' => "Campo nome deve ter no mínimo :min",
-            'cnpj.required' => "Campo CNPJ obrigatório",
-            'email.required' => "Campo E-mail obrigatório"
+        return[
+            'nome.required' => 'Campo Nome obrigatório',
+            'cnpj.required' => 'Campo CNPJ obrigatório',
+            'endereco.required' => 'Campo Endereço obrigatório',
+            'telefone.required' => 'Campo Telefone obrigatório',
+            'email.required' => 'Campo E-mail obrigatório',
         ];
+
     }
+
 }

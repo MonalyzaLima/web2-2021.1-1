@@ -3,7 +3,6 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use App\Rules\UpperCase;
 
 class StoreClienteRequest extends FormRequest
 {
@@ -25,18 +24,22 @@ class StoreClienteRequest extends FormRequest
     public function rules()
     {
         return [
-            'nome' => ['required', 'min:10', new UpperCase()],
-            'debito' => 'required',
-            'endereco ' => 'required',
+                'nome' => 'required',
+                'cpf' => 'required',
+                'endereco' => 'required',
+                'telefone' => 'required',
+                'dataNascimento' => 'required',
         ];
     }
 
     public function messages(){
-        return [
-            'nome.required' => "Campo nome obrigatório",
-            'nome.min' => "Campo nome deve ter no mínimo :min",
-            'debito.required' => "Campo débito obrigatório",
-            'endereco.required' => "Campo endereço obrigatório"
+        return[
+            'nome.required' => 'Campo Nome obrigatório',
+            'cpf.required' => 'Campo CPF obrigatório',
+            'endereco.required' => 'Campo Endereço obrigatório',
+            'telefone.required' => 'Campo Telefone obrigatório',
+            'dataNascimento.required' => 'Campo Data de nascimento obrigatório',
         ];
+
     }
 }

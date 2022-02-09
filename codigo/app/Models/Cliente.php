@@ -8,19 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Cliente extends Model
 {
     use HasFactory;
-
-    //nome da tabela
+    
     protected $table = "clientes" ;
 
-    //Campos setados no banco
-    protected $fillable = ['nome', 'endereco', 'debito'];
+    protected $fillable = ['nome', 'cpf', 'endereco', 'telefone', 'dataNascimento'];
 
 
     function venda(){
         return $this->hasMany(Venda::class, 'cliente_id', 'id');
-    }
-
-    function endereco(){
-        return $this->hasMany(Endereco::class, 'cliente_id', 'id');
     }
 }

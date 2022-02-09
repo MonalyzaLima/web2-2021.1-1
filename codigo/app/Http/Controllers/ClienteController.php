@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreClienteRequest;
 use Illuminate\Http\Request;
+use App\Http\Requests\StoreClienteRequest;
 use App\Models\Cliente;
 
 class ClienteController extends Controller
@@ -16,12 +16,8 @@ class ClienteController extends Controller
 
     public function index(){
         $clientes = Cliente::all();
-        /*foreach($clientes as $cliente){
-            echo "<p> Nome do {{ $cliente }} </p>";
-        } */
-
-
-        return view('clientes.index', ['clientes' => $clientes ]); //Passa objeto
+     
+        return view('clientes.index', ['clientes' => $clientes ]); 
     }
 
     public function create(){
@@ -31,10 +27,9 @@ class ClienteController extends Controller
     public function store(StoreClienteRequest $request){
         $cliente = new Cliente();
         $cliente->nome = $request->nome;
-        $cliente->debito = $request->debito;
-        $cliente->endereco = $request->endereco;
+        $cliente->cpf = $request->cpf;
         $cliente->save();
-        return redirect('index');
+        return redirect()->route('cliente.index');
     }
 
     public function show($id){
@@ -54,12 +49,12 @@ class ClienteController extends Controller
 
     public function update(StoreClienteRequest $request){
         Cliente::find($request->id)->update($request->except('_method'));
-        return redirect('index')->with('msg', 'Cadastro realizado com sucesso');
+        return redirect()->route('cliente.index')->with('msg', 'Cadastro realizado com sucesso');
     }
 
     public function destroy($id){
         Cliente::findorFail($id)->delete();
-        return redirect('index')->with('msg', 'Cliente apagado');
+        return redirect()->route('cliente.index')->with('msg', 'Cliente apagado');
     }
 
     public function showendereco(){
@@ -78,6 +73,4 @@ class ClienteController extends Controller
             }
         }
     }
-
-
 }

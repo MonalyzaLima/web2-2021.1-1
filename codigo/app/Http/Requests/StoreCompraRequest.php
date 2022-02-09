@@ -13,7 +13,7 @@ class StoreCompraRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,22 @@ class StoreCompraRequest extends FormRequest
     public function rules()
     {
         return [
-            //
-        ];
-    }
+            'nome' => 'required',
+            'cpf' => 'required',
+            'endereco' => 'required',
+            'telefone' => 'required',
+            'dataNascimento' => 'required',
+    ];
+}
+
+public function messages(){
+    return[
+        'nome.required' => 'Campo Nome obrigatório',
+        'cpf.required' => 'Campo CPF obrigatório',
+        'endereco.required' => 'Campo Endereço obrigatório',
+        'telefone.required' => 'Campo Telefone obrigatório',
+        'dataNascimento.required' => 'Campo Data de nascimento obrigatório',
+    ];
+
+}
 }

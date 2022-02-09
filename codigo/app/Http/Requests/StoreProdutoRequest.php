@@ -13,7 +13,7 @@ class StoreProdutoRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,22 +24,26 @@ class StoreProdutoRequest extends FormRequest
     public function rules()
     {
         return [
-            'nomeProduto' => 'required|min:10',
-            'valorCompra ' => 'required',
-            'valorVenda ' => 'required',
-            'quantidade ' => 'required'
-
+            'nome' => 'required',
+            'ano' => 'required',
+            'cor' => 'required',
+            'marca' => 'required',
+            'quantidade' => 'required',
+            'valorVenda' => 'required',
+            'valorCompra' => 'required',
         ];
     }
 
     public function messages(){
-        return [
-            'nomeProduto.required' => "Campo nome obrigatório",
-            'nomeProduto.min' => "Campo nome deve ter no mínimo :min",
-            'valorCompra.required' => "Campo valor de compra obrigatório",
-            'valorVenda.required' => "Campo valor de venda obrigatório",
-            'quantidade.required' => "Campo quantidade obrigatório"
-
+        return[
+            'nome.required' => 'Campo Nome obrigatório',
+            'ano.required' => 'Campo Ano obrigatório',
+            'cor.required' => 'Campo Endereço obrigatório',
+            'marca.required' => 'Campo Telefone obrigatório',
+            'quantidade.required' => 'Campo  Quantidade obrigatório',
+            'valorVenda.required' => 'Campo  Valor de venda obrigatório',
+            'valorCompra.required' => 'Campo  Valor de compra obrigatório',
         ];
+
     }
 }
