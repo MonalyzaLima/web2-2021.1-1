@@ -1,0 +1,1 @@
+hmod -R 777 Storage
