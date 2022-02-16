@@ -16,6 +16,11 @@ As tecnologias abaixo foram utilizadas para o desenvolvimento do projeto:
 
 > ## Funcionalidades
 
+
+:heavy_check_mark: Login
+
+:heavy_check_mark: Cadastro de funcionário
+
 :heavy_check_mark: Cadastro, consulta e remoção de Venda
 
 :heavy_check_mark: Cadastro, consulta e remoção de Compra
