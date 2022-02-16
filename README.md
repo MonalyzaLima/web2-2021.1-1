@@ -16,9 +16,9 @@ As tecnologias abaixo foram utilizadas para o desenvolvimento do projeto:
 
 > ## Funcionalidades
 
-:heavy_check_mark: Cadastro, consulta, edição e remoção de Venda
+:heavy_check_mark: Cadastro, consulta e remoção de Venda
 
-:heavy_check_mark: Cadastro, consulta, edição e remoção de Compra
+:heavy_check_mark: Cadastro, consulta e remoção de Compra
 
 :heavy_check_mark: Cadastro, consulta, edição e remoção de Clientes
 
