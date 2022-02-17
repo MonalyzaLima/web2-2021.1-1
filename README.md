@@ -44,6 +44,8 @@ As tecnologias abaixo foram utilizadas para o desenvolvimento do projeto:
 
 :heavy_check_mark: Cadastro, consulta e remoção de Compra
 
+:heavy_check_mark: Cadastro, consulta, edição e remoção de Produtos
+
 :heavy_check_mark: Cadastro, consulta, edição e remoção de Clientes
 
 :heavy_check_mark: Cadastro, consulta, edição e remoção de Fornecedores
