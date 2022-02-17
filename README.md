@@ -3,7 +3,7 @@ Carsystem é um sistema WEB de concessionária de automóveis desenvolvido para 
 
 <div align="center">
 
-  #### [Tecnologias](#tecnologias) │ [Funcionalidades](#funcionalidades) │ [Acesso](#acesso-ao-sistema) 
+  #### [Tecnologias](#tecnologias) │ [Layout](#layout) │ [Funcionalidades](#funcionalidades) │ [Acesso](#acesso-ao-sistema) 
 
 </div>
 
@@ -12,6 +12,12 @@ Carsystem é um sistema WEB de concessionária de automóveis desenvolvido para 
 As tecnologias abaixo foram utilizadas para o desenvolvimento do projeto: 
 
 <img src="https://img.shields.io/static/v1?label=&message=PHP&color=black&style=for-the-badge&logo=PHP"/> <img src="https://img.shields.io/static/v1?label=&message=CSS 3&color=black&style=for-the-badge&logo=CSS3"/> <img src="https://img.shields.io/static/v1?label=&message=JAVASCRIPT&color=black&style=for-the-badge&logo=JAVASCRIPT"/> <img src="https://img.shields.io/static/v1?label=&message=HTML 5&color=black&style=for-the-badge&logo=HTML5"/> 
+
+> ## Layout
+
+* Tela de Login
+
+<img src="https://github.com/kazok1/carsystemweb1/blob/main/public/img/login.png" width="800">
 
 
 > ## Funcionalidades
