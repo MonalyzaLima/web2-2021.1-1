@@ -3,7 +3,7 @@ Carsystem é um sistema WEB de concessionária de automóveis desenvolvido para 
 
 <div align="center">
 
-  #### [Tecnologias](#tecnologias) │ [Layout](#layout) │ [Funcionalidades](#funcionalidades) │ [Acesso](#acesso-ao-sistema) 
+  #### [Tecnologias](#tecnologias) │ [Layout](#layout) │ [Funcionalidades](#funcionalidades) │ [Acesso](#acesso-ao-sistema) │ [Sistema Hospedado](#sistema-hospedado) 
 
 </div>
 
@@ -17,7 +17,17 @@ As tecnologias abaixo foram utilizadas para o desenvolvimento do projeto:
 
 * Tela de Login
 
-<img src="https://github.com/kazok1/carsystemweb1/blob/main/public/img/login.png" width="800">
+<img src="https://github.com/MonalyzaLima/web2-2021.1-1/blob/projetoII-backend/codigo/public/img/login.png" width="800">
+
+
+* Tela de Vendas
+
+<img src="https://github.com/MonalyzaLima/web2-2021.1-1/blob/projetoII-backend/codigo/public/img/index.png" width="800">
+
+
+* Tela de Cadastro de Vendas
+
+<img src="https://github.com/MonalyzaLima/web2-2021.1-1/blob/projetoII-backend/codigo/public/img/login.png" width="800">
 
 
 > ## Funcionalidades
@@ -80,3 +90,15 @@ https://github.com/MonalyzaLima/web2-2021.1-1
   $ php -S localhost:8000 public/index.php
 
 ```
+
+> ## Sistema Hospedado
+
+* Link para acessar o sistema hospeado:
+http://carsystemm.herokuapp.com/
+
+
+* Login
+
+  E-mail: admin@admin.com
+  
+  Senha: 12345678
