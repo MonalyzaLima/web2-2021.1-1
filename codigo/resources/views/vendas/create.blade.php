@@ -151,7 +151,7 @@
                         <select required onchange="mudaProduto(`+numeroProduto+`)" id="select_`+numeroProduto+`" class="form-control" name="produto[]">
                             <option value="">Selecione o produto</option>  
                             @foreach ($produtos as $produto)
-                                <option data-valor-unitario="{{ $produto->valorVenda }}" value="{{ $produto->id }}">{{ $produto->nome }}</option>
+                                <option data-valor-unitario="{{ $produto->valorVenda }}" value="{{ $produto->id }}">{{ $produto->nomeProduto }}</option>
                             @endforeach
                         </select>
                     </th>

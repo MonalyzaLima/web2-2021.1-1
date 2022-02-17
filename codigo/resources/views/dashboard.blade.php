@@ -11,7 +11,7 @@
         </header>
         <div class="content">
             <div class="galeria" style="text-align: center;">
-                <img src="../public/img/Fiat_argo.png" alt="">
+                <img src="{{asset('img/Fiat_argo.png')}}" alt="">
             </div>
             <br>
             <div class="d-flex justify-content-lg-evenly">

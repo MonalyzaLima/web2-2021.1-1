@@ -1,10 +1,10 @@
 <html lang="en" style="background-color: #f3f4f6;">
     <title>Cadastro</title>
     <x-guest-layout>
-        <img src="../public/img/homem.jpg" style=" position: relative;  height: 980px; object-fit: cover;   width: 55%; float:left; ">
+        <img src="{{asset('img/homem.jpg')}}" style=" position: relative;  height: 980px; object-fit: cover;   width: 55%; float:left; ">
         <x-auth-card>
             <x-slot name="logo">
-                <img src="../public/img/Logo.png" alt="" style="width: 90%; margin: auto; position: relative;">
+                <img src="{{asset('img/homem.jpg')}}" alt="" style="width: 90%; margin: auto; position: relative;">
             </x-slot>
             <!-- Validation Errors -->
             <x-auth-validation-errors class="mb-4" :errors="$errors" />

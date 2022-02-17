@@ -18,4 +18,14 @@ class Venda extends Model
     {
         return $this->hasMany(ProdutoVenda::class, 'idVenda');
     }
+
+    public function cliente()
+    {
+        return $this->belongsTo(Cliente::class, 'idCliente');
+    }
+
+    public function formaPagamento()
+    {
+        return $this->belongsTo(formaPagamento::class, 'idFormaPagamento');
+    }
 }

@@ -18,5 +18,15 @@ class Compra extends Model
     {
         return $this->hasMany(ProdutoCompra::class, 'idCompra');
     }
+
+    public function fornecedor()
+    {
+        return $this->belongsTo(fornecedor::class, 'idFornecedor');
+    }
+
+    public function formaPagamento()
+    {
+        return $this->belongsTo(formaPagamento::class, 'idFormaPagamento');
+    }
 }
 

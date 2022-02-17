@@ -24,15 +24,11 @@
                     </div>
                     <div class="col-md-4">
                         <label for="" class="text-white">Fornecedor</label>
-                            @foreach ($fornecedores as $fornecedor)
-                                <input disabled required id="nomeFornecedor" name="nomeFornecedor" type="text" class="form-control" value="{{ $fornecedor->nome }}">
-                            @endforeach
+                        <input disabled required id="nomeFornecedor" name="nomeFornecedor" type="text" class="form-control" value="{{ $compra->fornecedor->nome }}">
                     </div>
                     <div class="col-md-4">
                         <label for="" class="text-white">Forma de pagamento</label>
-                            @foreach ($formasPagamento as $formaPagamento)
-                                <input disabled required id="formaPagamento" name="formaPagamento" type="text" class="form-control" value="{{ $formaPagamento->descricao }}">
-                            @endforeach
+                        <input disabled required id="formaPagamento" name="formaPagamento" type="text" class="form-control" value="{{ $compra->formaPagamento->descricao }}">
                         </select>
                     </div>
                 </div>
