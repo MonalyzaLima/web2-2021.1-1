@@ -11,7 +11,7 @@ Carsystem é um sistema WEB de concessionária de automóveis desenvolvido para 
 
 As tecnologias abaixo foram utilizadas para o desenvolvimento do projeto: 
 
-<img src="https://img.shields.io/static/v1?label=&message=PHP&color=black&style=for-the-badge&logo=PHP"/> <img src="https://img.shields.io/static/v1?label=&message=LARAVEL 5&color=black&style=for-the-badge&logo=LARAVEL"/>  <img src="https://img.shields.io/static/v1?label=&message=BOOTSTRAP 5&color=black&style=for-the-badge&logo=BOOTSTRAP"/> <img src="https://img.shields.io/static/v1?label=&message=JAVASCRIPT&color=black&style=for-the-badge&logo=JAVASCRIPT"/> <img src="https://img.shields.io/static/v1?label=&message=HTML 5&color=black&style=for-the-badge&logo=HTML5"/>  <img src="https://img.shields.io/static/v1?label=&message=CSS 3&color=black&style=for-the-badge&logo=CSS3"/>  
+<img src="https://img.shields.io/static/v1?label=&message=PHP&color=black&style=for-the-badge&logo=PHP"/> <img src="https://img.shields.io/static/v1?label=&message=LARAVEL 5&color=black&style=for-the-badge&logo=LARAVEL"/>  <img src="https://img.shields.io/static/v1?label=&message=BOOTSTRAP 5&color=black&style=for-the-badge&logo=BOOTSTRAP"/> <img src="https://img.shields.io/static/v1?label=&message=JAVASCRIPT&color=black&style=for-the-badge&logo=JAVASCRIPT"/> <img src="https://img.shields.io/static/v1?label=&message=HTML 5&color=black&style=for-the-badge&logo=HTML5"/>  <img src="https://img.shields.io/static/v1?label=&message=CSS 3&color=black&style=for-the-badge&logo=CSS3"/>  <img src="https://img.shields.io/static/v1?label=&message=MYSQL 3&color=black&style=for-the-badge&logo=MYSQL"/>  
 
 
 
