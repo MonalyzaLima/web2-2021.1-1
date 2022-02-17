@@ -3,7 +3,7 @@ Carsystem é um sistema WEB de concessionária de automóveis desenvolvido para 
 
 <div align="center">
 
-  #### [Tecnologias](#tecnologias) │ [Funcionalidades](#funcionalidades) │ [Acesso](#acesso-ao-sistema) 
+  #### [Tecnologias](#tecnologias) │ [Layout](#layout) │ [Funcionalidades](#funcionalidades) │ [Acesso](#acesso-ao-sistema) │ [Sistema Hospedado](#sistema-hospedado) 
 
 </div>
 
@@ -13,12 +13,33 @@ As tecnologias abaixo foram utilizadas para o desenvolvimento do projeto:
 
 <img src="https://img.shields.io/static/v1?label=&message=PHP&color=black&style=for-the-badge&logo=PHP"/> <img src="https://img.shields.io/static/v1?label=&message=CSS 3&color=black&style=for-the-badge&logo=CSS3"/> <img src="https://img.shields.io/static/v1?label=&message=JAVASCRIPT&color=black&style=for-the-badge&logo=JAVASCRIPT"/> <img src="https://img.shields.io/static/v1?label=&message=HTML 5&color=black&style=for-the-badge&logo=HTML5"/> 
 
+> ## Layout
+
+* Tela de Login
+
+<img src="https://github.com/MonalyzaLima/web2-2021.1-1/blob/projetoII-backend/codigo/public/img/login.png" width="800">
+
+
+* Tela de Vendas
+
+<img src="https://github.com/MonalyzaLima/web2-2021.1-1/blob/projetoII-backend/codigo/public/img/index.png" width="800">
+
+
+* Tela de Cadastro de Vendas
+
+<img src="https://github.com/MonalyzaLima/web2-2021.1-1/blob/projetoII-backend/codigo/public/img/login.png" width="800">
+
 
 > ## Funcionalidades
 
-:heavy_check_mark: Cadastro, consulta, edição e remoção de Venda
 
-:heavy_check_mark: Cadastro, consulta, edição e remoção de Compra
+:heavy_check_mark: Login
+
+:heavy_check_mark: Cadastro de funcionário
+
+:heavy_check_mark: Cadastro, consulta e remoção de Venda
+
+:heavy_check_mark: Cadastro, consulta e remoção de Compra
 
 :heavy_check_mark: Cadastro, consulta, edição e remoção de Clientes
 
@@ -69,3 +90,15 @@ https://github.com/MonalyzaLima/web2-2021.1-1
   $ php -S localhost:8000 public/index.php
 
 ```
+
+> ## Sistema Hospedado
+
+* Link para acessar o sistema hospeado:
+http://carsystemm.herokuapp.com/
+
+
+* Login
+
+  E-mail: admin@admin.com
+  
+  Senha: 12345678
