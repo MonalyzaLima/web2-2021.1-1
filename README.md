@@ -13,6 +13,8 @@ As tecnologias abaixo foram utilizadas para o desenvolvimento do projeto:
 
 <img src="https://img.shields.io/static/v1?label=&message=PHP&color=black&style=for-the-badge&logo=PHP"/> <img src="https://img.shields.io/static/v1?label=&message=CSS 3&color=black&style=for-the-badge&logo=CSS3"/> <img src="https://img.shields.io/static/v1?label=&message=JAVASCRIPT&color=black&style=for-the-badge&logo=JAVASCRIPT"/> <img src="https://img.shields.io/static/v1?label=&message=HTML 5&color=black&style=for-the-badge&logo=HTML5"/> 
 
+
+
 > ## Layout
 
 * Tela de Login
@@ -27,7 +29,8 @@ As tecnologias abaixo foram utilizadas para o desenvolvimento do projeto:
 
 * Tela de Cadastro de Vendas
 
-<img src="https://github.com/MonalyzaLima/web2-2021.1-1/blob/projetoII-backend/codigo/public/img/login.png" width="800">
+<img src="https://github.com/MonalyzaLima/web2-2021.1-1/blob/projetoII-backend/codigo/public/img/create.png" width="800">
+
 
 
 > ## Funcionalidades
@@ -44,6 +47,8 @@ As tecnologias abaixo foram utilizadas para o desenvolvimento do projeto:
 :heavy_check_mark: Cadastro, consulta, edição e remoção de Clientes
 
 :heavy_check_mark: Cadastro, consulta, edição e remoção de Fornecedores
+
+
 
 > ## Acesso ao Sistema
 
@@ -90,6 +95,7 @@ https://github.com/MonalyzaLima/web2-2021.1-1
   $ php -S localhost:8000 public/index.php
 
 ```
+
 
 > ## Sistema Hospedado
 
